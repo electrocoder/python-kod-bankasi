@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Python Kod Bankası : python kod bankasi" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Python Kod Bankası</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/electrocoder/python-kod-bankasi">View on GitHub</a>
+
+          <h1 id="project_title">Python Kod Bankası</h1>
+          <h2 id="project_tagline">python kod bankasi</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/electrocoder/python-kod-bankasi/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/electrocoder/python-kod-bankasi/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>Python Kod Bankası Nedir?</h2>
+
+<p>Her gün kullanmış olduğumuz fonksiyonlar, siniflar ve değişkenler ile birbirinden farklı projelere imza atarız. Bazen bir modül bazende bir sinif olur bu. </p>
+
+<p>Kod bankası elimizin altında duran bir kodlab dır esasında. İhtiyaç olduğunda buradaki modüller çağırılarak yeniden kullanılır.</p>
+
+<h3>Bir örnek verelim:</h3>
+
+<p>Elimizde şöyle bir modul olsun. </p>
+
+<pre><code>MYPORT = 50000
+
+import sys, time
+from socket import *
+
+s = socket(AF_INET, SOCK_DGRAM)
+s.bind(('', 0))
+s.setsockopt(SOL_SOCKET, SO_BROADCAST, 1)
+
+while 1:
+    data = `time.time()` + '\n'
+    s.sendto(data, ('&lt;broadcast&gt;', MYPORT))
+    time.sleep(2)
+</code></pre>
+
+<p>Bu modülü her ihtiyaç olduğunda tekrardan yazmak yerine bankadan çağırarak hız ve zaman kanırız.</p>
+
+<p><a href="http://www.pythontr.org">www.pythontr.org</a>
+Pyhon kullanıcıları topluluğu</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Python Kod Bankası maintained by <a href="https://github.com/electrocoder">electrocoder</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
